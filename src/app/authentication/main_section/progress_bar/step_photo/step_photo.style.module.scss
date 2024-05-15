@@ -1,0 +1,45 @@
+@import "@mixins";
+@import "@constants";
+
+.container_steps_photo{
+  display: flex;
+  @include mobile{
+    flex-direction: column;
+  }
+  @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include tablet-xl{
+      flex-direction: row;
+    }
+    @include desktop{
+      flex-direction: row;
+    }
+  margin: 0;
+  padding: 0;
+}
+
+.info_container_step_photo{
+    @include mobile{
+        width: 100%;
+    }
+    @include tablet {
+        width: 100%;
+    }
+    @include tablet-xl{
+        width: 50%;
+    }
+    @include desktop{
+        width: 50%;
+    }
+}
+
+
+
+.info_container_step_photo > div.enabled{
+  opacity: 1;
+}
+
+
+
