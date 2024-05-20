@@ -1,6 +1,7 @@
 @import "@mixins";
 @import "@constants";
 
+
 .nav{
   position: sticky;
   top: 0;
@@ -8,6 +9,15 @@
   max-height: 6.125rem;
   padding: 1rem 1.5rem;
   z-index: 1000;
+
+  .profile{
+
+      width: 300px;
+      height: 300px;
+      color: white;
+      background-image: url('/./src/assets/images/authentication/profile.jpg');
+
+  }
 
   ul{
     display: flex;

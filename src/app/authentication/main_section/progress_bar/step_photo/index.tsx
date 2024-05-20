@@ -64,7 +64,7 @@ function StepPhoto() {
                     <img className={styles_main.image_container__taked_image} src={`${takePicture}`} alt="" />
                     <a onClick={() => setShowCamera(true)}
                         className={`${takePicture.length > 0 ? styles_main.image_container__button__hidden : styles_main.image_container__button__show}`} >
-                        <Button text={'CÄMARA DE CONDUCTOR'} buttonType={'secondary'} iconLeft="camera" />
+                        <Button text={'VER CÁMARA DE CONDUCTOR'} buttonType={'secondary'} iconLeft="camera" />
                     </a>
                 </article>
                 <button disabled={steps < 2}

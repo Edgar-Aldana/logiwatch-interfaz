@@ -88,7 +88,7 @@ function CameraIdCard({typeIdCard}: any) {
             </div>
             <div className={styles.container_buttons}>
                 {imgSrc === null ?
-                    (<><Button text="Camara de conductor" buttonType={'principal'} iconLeft="photo" onClick={capture} />
+                    (<><Button text="Cámara de conductor" buttonType={'principal'} iconLeft="photo" onClick={capture} />
                         <button className={`${styles.button_switch_cameras}`}
                             onClick={handleClick}
                         >

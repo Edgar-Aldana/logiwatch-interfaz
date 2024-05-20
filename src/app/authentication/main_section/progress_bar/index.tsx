@@ -16,14 +16,7 @@ export function ProgressBar() {
     return (
         <>
             <section className={styles.container__progressbar}>
-                <h2 className={styles_main.title_gray}>Analizando estado de perturbación en conductor</h2>
-                <div className={styles.steps}>
-
-                    <Step numberStep={1} textStep={'Monitoreo'}
-                        isActive={steps < 3}
-                        indicatorActive= {steps >= 1}
-                        completed={dictStepsComplete[1]} typeStep={1} />
-                </div>
+                <h2 className={styles_main.title_gray}>Analizando condición del conductor</h2>
             </section>
             {steps < 3 ? <StepPhoto/> : null}
             {steps >= 3 && steps < 5 ? <StepIdCard/> : null}
