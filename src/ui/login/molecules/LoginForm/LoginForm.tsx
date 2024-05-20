@@ -13,7 +13,7 @@ import { InputStates } from "@types";
 export default function LoginForm({ setCurrentForm } : LoginFormProps) {
     const [formStates, setFormStates] = useState({
         email: { value: "eddaldana95@gmail.com", mood: "filled", helperText: "" } as InputStates,
-        password: { value: "secretpassword", mood: "filled", helperText: "" } as InputStates, 
+        password: { value: "secretPassword", mood: "filled", helperText: "" } as InputStates, 
         /* email: { value: "", mood: "default", helperText: "" } as InputStates,
         password: { value: "", mood: "default", helperText: "" } as InputStates, */
     })
