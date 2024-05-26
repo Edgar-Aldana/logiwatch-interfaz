@@ -15,13 +15,46 @@
     padding: 0 48px;
 
     .logo {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         font-weight: 700;
-        font-size: 50px;
+        font-size: 70px;
         line-height: 98.35px;
         letter-spacing: 8px;
         text-align: center;
         color: $blue-1;
+
+       
     }
+
+    .image{
+        
+        width: 50px;
+        height: 50px;
+
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 98.35px;
+        letter-spacing: 8px;
+        text-align: center;
+        color: $blue-1;
+        border-radius: 14px;
+
+        background-image: url("../../assets/images/login/logo.png");
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        background-repeat: no-repeat;
+
+        margin-right: 5px;
+
+    }
+
+
 }
 
 .right_section {

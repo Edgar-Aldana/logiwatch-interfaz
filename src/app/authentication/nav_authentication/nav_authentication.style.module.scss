@@ -65,6 +65,52 @@
             text-align: center;
         }
       }
+      .image{
+        
+        width: 50px;
+        height: 50px;
+
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 98.35px;
+        letter-spacing: 8px;
+        text-align: center;
+        color: $blue-1;
+        border-radius: 14px;
+
+        background-image: url("../../../assets/images/login/logo.png");
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        background-repeat: no-repeat;
+
+        margin-right: 5px;
+
+      }
+      .profile{
+
+          width: 60px;
+          height: 60px;
+
+          background-image: url("../../../assets/images/authentication/profile.png");
+          background-size: contain;
+          background-position: center;
+          background-color: $blue-secondary;
+          background-repeat: no-repeat;
+
+          border: 2px solid white;
+          border-radius: 100%;
+
+          -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+          box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+      }
+      .profile:hover{
+
+        scale: 1.1;
+        transition: all 0.3s;
+
+      }
       span.subtitle_2{
         color: #F7F7F7BF;
         font-style: normal;

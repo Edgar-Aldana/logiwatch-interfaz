@@ -6,7 +6,11 @@ export default async function Login(){
     return(
         <div className={styles.container}>
             <div className={styles.left_section}>
-                <div className={styles.logo}>LogiWatch</div>
+                 
+                <div className={styles.logo}> 
+                    <div className={styles.image}></div> 
+                    Kanan    
+                </div>
                 <FormsContainer />
             </div>
             <div className={styles.right_section}></div>

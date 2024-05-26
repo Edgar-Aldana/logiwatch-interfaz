@@ -1,7 +1,7 @@
 import './globals.scss';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: 'LogiWatch',
+  title: 'Kanan',
   description: '',
 }
 type RootLayoutProps = { children: React.ReactNode }
