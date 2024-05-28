@@ -48,12 +48,6 @@ function MainSection() {
     return (
         <>
             <NavAuthentication />
-            {showCamera ? ws && <Camera/> : <></>}
-            {showCameraIdCard && takePictureIdCardFront ? <CameraIdCard typeIdCard={1} /> : <></>}
-            {showCameraIdCard && takePictureIdCardBack ? <CameraIdCard typeIdCard={2} /> : <></>}
-            {showLoader && (
-                <LoaderWhite />
-            )}
             <main className={styles.main_container}>
                 <ProgressBar/>
             </main>

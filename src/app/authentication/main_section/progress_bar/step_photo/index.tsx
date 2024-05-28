@@ -2,6 +2,7 @@ import React from "react";
 import { BodyUserCircle, Lamp, Cancel, ArrowRight } from '@icons';
 import { Button, LoaderWhite } from "@sharing/atoms";
 import { AuthenticationContext } from "@context";
+import { FacialRecognition } from "../websocket_recognition/index"
 import styles from "./step_photo.style.module.scss"
 import styles_main from "../../main.styles.module.scss"
 
@@ -60,13 +61,18 @@ function StepPhoto() {
                     </button>
 
                 </article>
+                    
+                
+
+
                 <article className={`${styles_main.image_container} ${takePicture.length > 0 ? styles_main.image_container_h_auto : null}`}>
-                    <img className={styles_main.image_container__taked_image} src={`${takePicture}`} alt="" />
-                    <a onClick={() => setShowCamera(true)}
-                        className={`${takePicture.length > 0 ? styles_main.image_container__button__hidden : styles_main.image_container__button__show}`} >
-                        <Button text={'VER CÁMARA DE CONDUCTOR'} buttonType={'secondary'} iconLeft="camera" />
-                    </a>
+                    
+                    <FacialRecognition/>
+
+
                 </article>
+
+
                 <button disabled={steps < 2}
                         className={`${styles_main.info_container__button}  ${styles_main.d_xl_none} ${styles_main.d_lg_none} ${styles_main.d_flex} ${styles_main.d_md_flex}
                         ${steps == 2 ? styles_main.info_container__button__enabled : styles_main.info_container__button__enabled}`}
