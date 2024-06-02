@@ -1,6 +1,8 @@
 @import "@mixins";
 @import "@constants";
 
+
+
 .container {
     @include flex(space-between, center, 48px, column);
     width: 100%;
@@ -16,6 +18,15 @@
             text-align: center;
             color: $blue-1;
             margin: 0px;
+
+            @media (max-width: 1196px) {
+                
+                color: $white-color;
+                text-shadow: 2px 0 $blue-1, -2px 0 $blue-1, 0 2px $blue-1, 0 -2px $blue-1,
+                1px 1px $blue-1, -1px -1px $blue-1, 1px -1px $blue-1, -1px 1px $blue-1;
+                
+            }
+
         }
         .error_span {
             color: $red-1;
@@ -28,12 +39,14 @@
             @include font(12px, 500);
             text-align: left;
             cursor: pointer;
+
         }
         .remeber_container {
             @include flex(space-between, center, 0px, row);
             width: 100%;
             .remeberme_span {
                 @include font(16px, 500);
+
             }
             > div { //checkbox
                 @include flex(center, center, 0px, row);
@@ -44,7 +57,7 @@
                 }
                 
             }
-            
+
         }
 
         .signup{

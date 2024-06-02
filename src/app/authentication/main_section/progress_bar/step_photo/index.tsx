@@ -65,10 +65,9 @@ function StepPhoto() {
                 
 
 
-                <article className={`${styles_main.image_container} ${takePicture.length > 0 ? styles_main.image_container_h_auto : null}`}>
+                <article className={styles.article}>
                     
                     <FacialRecognition/>
-
 
                 </article>
 

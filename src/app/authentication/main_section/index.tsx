@@ -12,26 +12,6 @@ function MainSection() {
 
     const { ws, setWs, authenticationSuccess, setAuthenticationSuccess, showCamera, setShowCamera, authenticationComplete, showLoader, takePictureIdCardFront, takePictureIdCardBack, showCameraIdCard, setShowLoader, setInstruction, setAuthenticationComplete, setIdFile, idFile}: any = React.useContext(AuthenticationContext);
     
-    const onMessage = (event:any) => {
-        const receivedData = JSON.parse(event.data);
-        setInstruction(receivedData['value']);
-        if (receivedData['value'] === 'complete') {
-            setAuthenticationSuccess(true);
-            setIdFile(receivedData['id']);
-        }
-    };
-
-    React.useEffect(() => {
-        const webSocket:any = new WebSocket('wss://192.168.1.164:9001/api/ws');
-        webSocket.onmessage = onMessage;
-        setWs(webSocket);
-
-        return () => {
-            if (webSocket) {
-                webSocket.close();
-            }
-        };
-    }, []);
 
     React.useEffect(() => {
         if (authenticationComplete) {

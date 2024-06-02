@@ -1,6 +1,40 @@
 @import "@mixins";
 @import "@constants";
 
+
+@mixin responsive($breakpoint, $width, $padding, $font-size, $line-height, $letter-spacing, $image-size) {
+    @media (max-width: $breakpoint) {
+        width: $width;
+        padding: 0 $padding;
+
+        // background-image: url("../../assets/images/login/background.jpeg");
+        background-repeat: no-repeat;
+        
+
+        .logo {
+            
+            // margin-top: -50%;
+            font-size: $font-size;
+            line-height: $line-height;
+            letter-spacing: $letter-spacing;
+            color: white;
+            text-shadow: 2px 0 $blue-1, -2px 0 $blue-1, 0 2px $blue-1, 0 -2px $blue-1,
+             1px 1px $blue-1, -1px -1px $blue-1, 1px -1px $blue-1, -1px 1px $blue-1;
+            
+            background-color: $blue-1;
+            border-radius: 14px;
+        }
+
+        .image {
+            width: $image-size;
+            height: $image-size;
+            
+        }
+
+    }
+}
+
+
 .container {
     @include flex(center);
     width: 100%;
@@ -13,6 +47,7 @@
     max-width: 496px;
     height: 100vh;
     padding: 0 48px;
+
 
     .logo {
 
@@ -55,6 +90,10 @@
     }
 
 
+ 
+    @include responsive(1199px, 60%, 16px, 40px, 55px, 5px, 35px);
+    @include responsive(950px, 100%, 32px, 30px, 45px, 4px, 30px);
+
 }
 
 .right_section {
@@ -64,4 +103,16 @@
     background-image: url("../../assets/images/login/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+
+
+    @media (max-width: 1240px) {
+
+        display: none;
+        
+    }
+
+
 }
+
+
+
