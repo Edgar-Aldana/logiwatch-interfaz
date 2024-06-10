@@ -2,7 +2,6 @@ import React from 'react';
 import { Step } from './step/'
 import { StepPhoto } from './step_photo/';
 import { StepIdCard } from './step_id_card/';
-import { StepRecord } from './step_record/';
 import { StepSignature } from './step_signature/';
 import { AuthenticationContext } from "@context";
 import styles from "./progress_bar.style.module.scss"

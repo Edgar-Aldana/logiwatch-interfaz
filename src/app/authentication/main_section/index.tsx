@@ -28,7 +28,7 @@ function MainSection() {
     return (
         <>
             <NavAuthentication />
-            <main className={styles.main_container}>
+            <main className={styles.main_container} id='root'>
                 <ProgressBar/>
             </main>
         </>

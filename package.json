@@ -19,8 +19,10 @@
     "package.json": "^2.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
     "react-signature-canvas": "1.0.6",
     "react-webcam": "7.1.1",
+    "socket.io-client": "^4.7.5",
     "survey-core": "1.9.115",
     "survey-react-ui": "1.9.115",
     "typescript": "5.2.2"
